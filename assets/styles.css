@@ -152,17 +152,71 @@ img.portrait{
 /* Remove any leftover brand image globally */
 .brand img{ display:none !important; }
 
-/* Stacked cards for Education & Work (multi-line) */
-.stack-list{list-style:none;margin:0;padding:0;display:grid;gap:12px}
-.stack-list .item{
-  background:var(--card);border:1px solid var(--border);
-  border-radius:14px;padding:12px 14px;
+/* ==== USC-like theme + Arial font (overrides) ==== */
+:root{
+  /* USC Cardinal + Gold */
+  --usc-cardinal: #990000;
+  --usc-gold: #FFC72C;
+
+  /* Keep your base neutrals, but set accent/link to USC colors */
+  --bg: #ffffff;
+  --fg: #111111;
+  --muted: #555555;
+  --card: #f7f7f9;
+  --border: #e5e7eb;
+
+  --accent: var(--usc-cardinal);
+  --link: var(--usc-cardinal);
+  --link-visited: #7a0000;   /* darker cardinal */
 }
+@media (prefers-color-scheme: dark){
+  :root{
+    --fg: #f4f4f5;
+    --muted: #c3c3c7;
+    --card: #14141b;
+    --border: #2a2a33;
+    --accent: #b30000;
+    --link: #ff8a80;
+    --link-visited: #ff5252;
+  }
+}
+
+/* Use Arial site‑wide */
+html,body{
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;
+}
+
+/* Subtle USC accenting on nav + badges */
+.nav a.active,.nav a:hover{background:var(--card);border-color:var(--accent)}
+.badges a{border-color:var(--accent);background:var(--card)}
+
+/* Hero lede paragraph */
+.lede{font-size:1.05rem;margin:.25rem 0 1rem}
+
+/* Affiliations (USC + Department logos) */
+.logo-row{
+  display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin:8px 0 12px;
+}
+.logo-row .logo{
+  display:flex; align-items:center; gap:8px;
+  background:var(--card); border:1px solid var(--border);
+  border-radius:999px; padding:6px 10px;
+}
+.logo-row .logo img{ height:22px; width:auto; display:block }
+.logo-row .logo .label{ font-size:.95rem; color:var(--muted) }
+
+/* Stacked cards (Education/Work) – keep multi-line format */
+.stack-list{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.stack-list .item{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:12px 14px}
 .stack-list .title{font-weight:700}
 .stack-list .sub{color:var(--muted);margin-top:2px}
 .stack-list .meta{color:var(--muted);font-size:.95rem;margin-top:2px}
 
-/* Publications: tidy list, no bold titles */
+/* Chips */
+.chips{list-style:none;display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:8px 0 0}
+.chip{font-size:.92rem;padding:6px 10px;border:1px solid var(--border);background:var(--card);border-radius:999px}
+
+/* Publications (no bold titles) */
 .publist{list-style:none;margin:0;padding:0}
 .publist li{margin:0 0 12px 0;padding:0 0 12px 0;border-bottom:1px dashed var(--border)}
 .pub-line{font-size:1rem}

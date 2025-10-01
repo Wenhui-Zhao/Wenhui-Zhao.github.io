@@ -105,3 +105,35 @@ code{background:var(--card);padding:.1rem .3rem;border-radius:6px;border:1px sol
   .site-header,.nav,.footer,.badges{display:none}
   body{background:white;color:black}
 }
+/* ===== Section heading icons (small logos) ===== */
+.with-ico{
+  display:flex; align-items:center; gap:8px;
+  font-size:1.25rem; margin:0 0 8px;
+}
+.secticon{
+  display:inline-flex; align-items:center; justify-content:center;
+  width:28px; height:28px; border-radius:999px;
+  background: rgba(27,94,32,.12); /* green tint */
+  font-size:16px; line-height:1;
+}
+@media (prefers-color-scheme: dark){
+  .secticon{ background: rgba(102,187,106,.18); }
+}
+
+/* Ensure hero is two-column with photo (safe if already present) */
+.hero.two-col{
+  display:grid; grid-template-columns: 1.2fr 0.8fr; gap:24px; align-items:center;
+}
+.hero-photo{text-align:center}
+img.portrait{
+  width: 220px; height: 220px; object-fit: cover;
+  border-radius: 999px; border: 4px solid var(--link-visited);
+  box-shadow: 0 10px 30px rgba(0,0,0,.12);
+}
+@media (max-width: 820px){
+  .hero.two-col{ grid-template-columns:1fr }
+  img.portrait{ width:180px; height:180px; margin-top:10px }
+}
+
+/* Optional: remove any leftover spacing that assumed a logo in the header */
+.brand img{ display:none }

@@ -1,5 +1,7 @@
 // assets/script.js
-// Renders the full publications list (no bold titles) from data/publications.json
+// Render publications from data/publications.json
+// Titles are NOT links; only the DOI (if present) is linked.
+
 async function renderPublications(){
   const container = document.getElementById('pubs');
   if(!container) return;
@@ -10,7 +12,7 @@ async function renderPublications(){
     // Optional: hide items by adding "hidden": true in publications.json
     items = items.filter(it => !it.hidden);
 
-    // Sort: year desc, then journal, then title
+    // Sort: newest first
     items.sort((a,b)=> (b.year||0)-(a.year||0)
       || String(a.journal||'').localeCompare(String(b.journal||''))
       || String(a.title||'').localeCompare(String(b.title||'')));
@@ -20,25 +22,23 @@ async function renderPublications(){
 
     for(const it of items){
       const title = it.title || '';
-      const link = it.link ? `<a href="${it.link}" target="_blank" rel="noopener">${title}</a>` : title;
-      const doi = it.doi ? ` <span class="small">• <a href="https://doi.org/${it.doi}" target="_blank" rel="noopener">doi:${it.doi}</a></span>` : '';
-      const note = it.note ? ` <span class="small">• ${it.note}</span>` : '';
-      const meta = [
-        it.authors || '',
-        it.year ? `(${it.year})` : '',
-        `<em>${it.journal || ''}</em>`,
-        it.volume ? `, ${it.volume}` : '',
-        it.issue ? `(${it.issue})` : '',
-        it.pages ? `, ${it.pages}` : ''
-      ].join('');
+      const authors = it.authors || '';
+      const year = it.year ? `(${it.year})` : '';
+      const journal = it.journal ? `<em>${it.journal}</em>` : '';
+      const vol = it.volume ? `, ${it.volume}` : '';
+      const issue = it.issue ? `(${it.issue})` : '';
+      const pages = it.pages ? `, ${it.pages}` : '';
+      const doiLink = it.doi
+        ? ` <span class="small">• <a href="https://doi.org/${it.doi}" target="_blank" rel="noopener">doi:${it.doi}</a></span>`
+        : '';
 
       const li = document.createElement('li');
-      li.innerHTML = `<div class="pub-line">${link}. ${meta}.${doi}${note}</div>`;
+      // Title is plain text (not a link); only DOI is linked
+      li.innerHTML = `<div class="pub-line">${title}. ${authors} ${year}. ${journal}${vol}${issue}${pages}.${doiLink}${it.note ? ' <span class="small">• ' + it.note + '</span>' : ''}</div>`;
       ul.appendChild(li);
     }
 
-    container.innerHTML = '';
-    container.appendChild(ul);
+    container.replaceChildren(ul);
   }catch(e){
     container.textContent = 'Could not load publications. ' + e;
   }

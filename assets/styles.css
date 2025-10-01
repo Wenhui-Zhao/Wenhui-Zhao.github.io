@@ -137,20 +137,33 @@ img.portrait{
 
 /* Optional: remove any leftover spacing that assumed a logo in the header */
 .brand img{ display:none }
-/* Stacked cards for Education & Work (multi-line, readable) */
+/* Section heading icons (small round logos) */
+.with-ico{display:flex;align-items:center;gap:8px;margin:0 0 8px}
+.secticon{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:28px;height:28px;border-radius:999px;
+  background: rgba(27,94,32,.12); /* green tint */
+  font-size:16px;line-height:1;
+}
+@media (prefers-color-scheme: dark){
+  .secticon{ background: rgba(102,187,106,.18); }
+}
+
+/* Remove any leftover brand image globally */
+.brand img{ display:none !important; }
+
+/* Stacked cards for Education & Work (multi-line) */
 .stack-list{list-style:none;margin:0;padding:0;display:grid;gap:12px}
 .stack-list .item{
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:14px;
-  padding:12px 14px;
+  background:var(--card);border:1px solid var(--border);
+  border-radius:14px;padding:12px 14px;
 }
 .stack-list .title{font-weight:700}
 .stack-list .sub{color:var(--muted);margin-top:2px}
 .stack-list .meta{color:var(--muted);font-size:.95rem;margin-top:2px}
 
-/* Publications: tidy list, NO bold titles */
+/* Publications: tidy list, no bold titles */
 .publist{list-style:none;margin:0;padding:0}
 .publist li{margin:0 0 12px 0;padding:0 0 12px 0;border-bottom:1px dashed var(--border)}
 .pub-line{font-size:1rem}
-.pub-line a{font-weight:400} /* keep titles normal-weight */
+.pub-line a{font-weight:400}

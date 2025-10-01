@@ -137,3 +137,20 @@ img.portrait{
 
 /* Optional: remove any leftover spacing that assumed a logo in the header */
 .brand img{ display:none }
+/* Stacked cards for Education & Work (multi-line, readable) */
+.stack-list{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.stack-list .item{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:12px 14px;
+}
+.stack-list .title{font-weight:700}
+.stack-list .sub{color:var(--muted);margin-top:2px}
+.stack-list .meta{color:var(--muted);font-size:.95rem;margin-top:2px}
+
+/* Publications: tidy list, NO bold titles */
+.publist{list-style:none;margin:0;padding:0}
+.publist li{margin:0 0 12px 0;padding:0 0 12px 0;border-bottom:1px dashed var(--border)}
+.pub-line{font-size:1rem}
+.pub-line a{font-weight:400} /* keep titles normal-weight */

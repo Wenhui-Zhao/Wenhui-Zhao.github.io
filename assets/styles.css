@@ -16,3 +16,8 @@ button.cta{appearance:none;border:1px solid var(--border);background:var(--card)
 .small{font-size:.95rem;color:var(--muted)}table{border-collapse:collapse;width:100%}th,td{border-bottom:1px solid var(--border);padding:10px 8px;text-align:left;vertical-align:top}th{color:var(--muted);font-weight:600}
 code{background:var(--card);padding:.1rem .3rem;border-radius:6px;border:1px solid var(--border)}
 @media print{.site-header,.nav,.footer,.badges{display:none}body{background:white;color:black}}
+/* Smaller chips for Research Interests on the home page */
+.interests-small .card{
+  font-size: 0.95rem;
+  padding: 10px 12px;
+}

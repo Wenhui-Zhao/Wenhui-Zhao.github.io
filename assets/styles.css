@@ -220,3 +220,35 @@ img.portrait{
     flex: 1 1 100%;
   }
 }
+/* === Put USC + Leonard Davis on the SAME ROW (desktop) === */
+.affiliations-top{
+  display: grid !important;               /* override any earlier flex */
+  grid-template-columns: 1fr 1fr;         /* two equal columns */
+  gap: 12px;
+}
+
+/* Make each pill shrink nicely and avoid wrapping */
+.affiliations-top .affil{
+  display: flex;                          /* keep logo + label inline */
+  align-items: center;
+  gap: 8px;
+  min-width: 0;                           /* allow shrinking below content width */
+  white-space: nowrap;                    /* keep label in one line */
+  text-decoration: none !important;       /* remove link underline */
+  color: inherit;
+}
+
+.affiliations-top .affil span{
+  overflow: hidden;
+  text-overflow: ellipsis;                /* show … if space is tight */
+}
+
+.affiliations-top .affil img{
+  height: 18px;                           /* slightly smaller logos so both fit */
+  width: auto;
+}
+
+/* Stack on small screens */
+@media (max-width: 720px){
+  .affiliations-top{ grid-template-columns: 1fr; }
+}

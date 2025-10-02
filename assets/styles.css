@@ -252,3 +252,43 @@ img.portrait{
 @media (max-width: 720px){
   .affiliations-top{ grid-template-columns: 1fr; }
 }
+/* === Affiliation pills: slightly larger + single row + no bottom line === */
+.affiliations-top{
+  /* keep them on one row */
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+
+  /* remove the grey line below the pills */
+  border-bottom: none !important;
+}
+
+.affiliations-top a.affil,
+.affiliations-top a.affil:hover,
+.affiliations-top a.affil:visited,
+.affiliations-top a.affil:focus{
+  text-decoration: none !important;   /* no underline on the labels */
+}
+
+.affiliations-top .affil{
+  padding: 10px 14px;                 /* slightly larger pill */
+  border-radius: 999px;
+  min-width: 0;
+  white-space: nowrap;                 /* keep text on one line */
+}
+
+.affiliations-top .affil img{
+  height: 26px;                        /* slightly larger logos (was ~18–22) */
+  width: auto;
+}
+
+.affiliations-top .affil span{
+  font-size: 1.05rem;                  /* slightly larger text */
+  overflow: hidden;
+  text-overflow: ellipsis;             /* add … if it ever gets too long */
+}
+
+/* Stack on small screens */
+@media (max-width: 720px){
+  .affiliations-top{ grid-template-columns: 1fr; }
+}

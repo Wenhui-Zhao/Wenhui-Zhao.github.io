@@ -33,7 +33,7 @@
 </head>
 <body>
 <header class="site-header container" role="banner">
-  <!-- Text-only brand (no header logo) -->
+  <!-- Text-only brand (no header logo image) -->
   <a class="brand" href="index.html" aria-label="Home">
     <div>
       <div class="name">Wenhui Zhao</div>
@@ -47,9 +47,21 @@
   </nav>
 </header>
 
+<!-- NEW: affiliations strip at the very top, just under the header -->
+<div class="affiliations-top container" role="group" aria-label="Affiliations">
+  <a class="affil" href="https://www.usc.edu" target="_blank" rel="noopener">
+    <img src="assets/usc-logo.png" alt="USC logo">
+    <span>University of Southern California</span>
+  </a>
+  <a class="affil" href="https://gero.usc.edu/" target="_blank" rel="noopener">
+    <img src="assets/usc-leonard-davis.png" alt="USC Leonard Davis School of Gerontology logo">
+    <span>Leonard Davis School of Gerontology</span>
+  </a>
+</div>
+
 <main class="container" id="content">
 
-  <!-- Two-column hero -->
+  <!-- Two-column hero (photo at right; no giant crest here) -->
   <section class="hero two-col">
     <div class="hero-content">
       <p class="lede">
@@ -69,17 +81,6 @@
 
     <div class="hero-photo">
       <img class="portrait" src="assets/photo.jpg" alt="Portrait of Wenhui Zhao" loading="lazy">
-      <!-- Reorganized affiliations logos: compact row under the photo -->
-      <div class="affil-row" role="group" aria-label="Affiliations">
-        <div class="affil">
-          <img src="assets/usc-logo.png" alt="USC logo" loading="lazy">
-          <span>USC</span>
-        </div>
-        <div class="affil">
-          <img src="assets/usc-leonard-davis.png" alt="USC Leonard Davis logo" loading="lazy">
-          <span>Leonard Davis</span>
-        </div>
-      </div>
     </div>
   </section>
 

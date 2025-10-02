@@ -191,3 +191,32 @@ img.portrait{
 .pub-line{ font-size:1rem }
 .pub-line a{ font-weight:400 }
 .small{ font-size:.95rem; color:var(--muted) }
+/* Keep USC + Leonard Davis logos on one row (desktop) */
+.affiliations-top{
+  display: flex;               /* already set, but safe */
+  gap: 12px;
+  flex-wrap: nowrap;           /* force single row */
+}
+.affiliations-top .affil{
+  flex: 1 1 0;                 /* split row into two equal pills */
+  min-width: 0;                /* allow shrinking below content width */
+  white-space: nowrap;         /* keep label on one line */
+}
+.affiliations-top .affil span{
+  overflow: hidden;
+  text-overflow: ellipsis;     /* add … if text gets too long */
+}
+.affiliations-top .affil img{
+  height: 18px;                /* keep logos compact so both fit */
+  width: auto;
+}
+
+/* Mobile fallback: stack gracefully */
+@media (max-width: 700px){
+  .affiliations-top{
+    flex-wrap: wrap;           /* allow two rows on small screens */
+  }
+  .affiliations-top .affil{
+    flex: 1 1 100%;
+  }
+}

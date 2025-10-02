@@ -7,7 +7,6 @@ async function renderPublications(){
     let items = await resp.json();
     items = items.filter(it => !it.hidden);
 
-    // Newest first
     items.sort((a,b)=> (b.year||0)-(a.year||0)
       || String(a.journal||'').localeCompare(String(b.journal||''))
       || String(a.title||'').localeCompare(String(b.title||'')));
@@ -23,10 +22,11 @@ async function renderPublications(){
       const vol = it.volume ? `, ${it.volume}` : '';
       const issue = it.issue ? `(${it.issue})` : '';
       const pages = it.pages ? `, ${it.pages}` : '';
-      const doi = it.doi ? ` <span class="small">• <a href="https://doi.org/${it.doi}" target="_blank" rel="noopener">doi:${it.doi}</a></span>` : '';
+      const doi = it.doi
+        ? ` <span class="small">• <a href="https://doi.org/${it.doi}" target="_blank" rel="noopener">doi:${it.doi}</a></span>`
+        : '';
       const note = it.note ? ` <span class="small">• ${it.note}</span>` : '';
 
-      // Title is plain text (not a link)
       const li = document.createElement('li');
       li.innerHTML = `<div class="pub-line">${title}. ${authors} ${year}. ${journal}${vol}${issue}${pages}.${doi}${note}</div>`;
       ul.appendChild(li);

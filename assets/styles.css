@@ -295,19 +295,23 @@ img.portrait{
 /* ===== Logo buttons inside the badges row ===== */
 .icon-badges{ display:flex; flex-wrap:wrap; gap:12px; align-items:center }
 
-/* Circular icon buttons (Google Scholar, ORCID) */
+/* Circular logo buttons (Scholar, ORCID, ResearchGate) */
 .icon-badges .icon-btn{
   width:44px; height:44px;
   display:inline-flex; align-items:center; justify-content:center;
   border-radius:999px;
   border:1.5px solid var(--accent);
   background: var(--card);
-  padding:0;
   text-decoration:none;
 }
-.icon-badges .icon-btn svg{ width:28px; height:28px; display:block }
+.icon-badges .icon-btn:hover{ filter: brightness(1.03) }
 
-/* Keep text pills looking like your existing style */
+/* Make raster logos fit nicely; keeps transparency if present */
+.icon-badges .icon-btn img{
+  width:28px; height:28px; display:block; object-fit:contain;
+}
+
+/* Keep text pills as you had them */
 .icon-badges .badge{
   display:inline-flex; align-items:center; gap:8px;
   padding:10px 14px;

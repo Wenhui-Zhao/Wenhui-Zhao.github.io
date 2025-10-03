@@ -292,3 +292,27 @@ img.portrait{
 @media (max-width: 720px){
   .affiliations-top{ grid-template-columns: 1fr; }
 }
+/* ===== Logo buttons inside the badges row ===== */
+.icon-badges{ display:flex; flex-wrap:wrap; gap:12px; align-items:center }
+
+/* Circular icon buttons (Google Scholar, ORCID) */
+.icon-badges .icon-btn{
+  width:44px; height:44px;
+  display:inline-flex; align-items:center; justify-content:center;
+  border-radius:999px;
+  border:1.5px solid var(--accent);
+  background: var(--card);
+  padding:0;
+  text-decoration:none;
+}
+.icon-badges .icon-btn svg{ width:28px; height:28px; display:block }
+
+/* Keep text pills looking like your existing style */
+.icon-badges .badge{
+  display:inline-flex; align-items:center; gap:8px;
+  padding:10px 14px;
+  border:1.5px solid var(--accent);
+  background:var(--card);
+  border-radius:999px;
+  text-decoration:none; color:inherit; font-weight:600;
+}

@@ -292,31 +292,32 @@ img.portrait{
 @media (max-width: 720px){
   .affiliations-top{ grid-template-columns: 1fr; }
 }
-/* ===== Logo buttons inside the badges row ===== */
-.icon-badges{ display:flex; flex-wrap:wrap; gap:12px; align-items:center }
+/* === Bigger logo buttons (Scholar / ORCID / ResearchGate) === */
+.icon-badges{ gap: 14px; }
 
-/* Circular logo buttons (Scholar, ORCID, ResearchGate) */
 .icon-badges .icon-btn{
-  width:44px; height:44px;
-  display:inline-flex; align-items:center; justify-content:center;
-  border-radius:999px;
-  border:1.5px solid var(--accent);
-  background: var(--card);
-  text-decoration:none;
+  width: 56px;                /* was 44px */
+  height: 56px;               /* was 44px */
+  border-width: 2px;          /* slightly stronger ring */
+  border-radius: 999px;
 }
-.icon-badges .icon-btn:hover{ filter: brightness(1.03) }
 
-/* Make raster logos fit nicely; keeps transparency if present */
 .icon-badges .icon-btn img{
-  width:28px; height:28px; display:block; object-fit:contain;
+  width: 34px !important;     /* override width="28" in HTML */
+  height: 34px !important;    /* override height="28" in HTML */
+  object-fit: contain;
 }
 
-/* Keep text pills as you had them */
+/* Make the "Email" pill visually balanced next to bigger icons */
 .icon-badges .badge{
-  display:inline-flex; align-items:center; gap:8px;
-  padding:10px 14px;
-  border:1.5px solid var(--accent);
-  background:var(--card);
-  border-radius:999px;
-  text-decoration:none; color:inherit; font-weight:600;
+  padding: 12px 18px;         /* was ~10px 14px */
+  border-width: 2px;
+  font-weight: 600;
+}
+
+/* Optional: scale down a bit on very small screens */
+@media (max-width: 480px){
+  .icon-badges .icon-btn{ width: 50px; height: 50px; }
+  .icon-badges .icon-btn img{ width: 30px !important; height: 30px !important; }
+  .icon-badges .badge{ padding: 10px 16px; }
 }

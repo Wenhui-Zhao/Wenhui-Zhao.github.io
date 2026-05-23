@@ -1,7 +1,7 @@
 [
   {
     "year": 2025,
-    "authors": "Zhao, W.; Lu, X.; Tu, Y.",
+    "authors": "Wenhui Zhao; Xuejing Lu; Yiheng Tu",
     "title": "Child maltreatment elevated the risk of late-life chronic pain: a biopsychosocial framework from the UK Biobank cohort",
     "journal": "Pain",
     "volume": "166",
@@ -13,7 +13,7 @@
   },
   {
     "year": 2024,
-    "authors": "Zhao, L.; Liu, J.; Zhao, W.; Chen, J.; Fan, J.; Ge, T.; Tu, Y.",
+    "authors": "Lei Zhao; Jiao Liu; Wenhui Zhao; Jie Chen; Jicong Fan; Tian Ge; Yiheng Tu",
     "title": "Morphological and genetic decoding shows heterogeneous patterns of brain aging in chronic musculoskeletal pain",
     "journal": "Nature Mental Health",
     "volume": "2",
@@ -21,11 +21,12 @@
     "pages": "435–449",
     "doi": "10.1038/s44220-024-00223-3",
     "link": "https://www.nature.com/articles/s44220-024-00223-3",
-    "type": "Journal Article"
+    "type": "Journal Article",
+    "note": "Lei Zhao and Jiao Liu contributed equally"
   },
   {
     "year": 2023,
-    "authors": "Zhao, L.; Zhao, W.; Cao, J.; Tu, Y.",
+    "authors": "Lei Zhao; Wenhui Zhao; International Headache Genetics Consortium (IHGC); Jin Cao; Yiheng Tu",
     "title": "Causal relationships between migraine and microstructural white matter: a Mendelian randomization study",
     "journal": "The Journal of Headache and Pain",
     "volume": "24",
@@ -37,7 +38,7 @@
   },
   {
     "year": 2023,
-    "authors": "Zhao, W.; Zhao, L.; Chang, X.; Lu, X.; Tu, Y.",
+    "authors": "Wenhui Zhao; Lei Zhao; Xiangyu Chang; Xuejing Lu; Yiheng Tu",
     "title": "Elevated dementia risk, cognitive decline, and hippocampal atrophy in multisite chronic pain",
     "journal": "Proceedings of the National Academy of Sciences",
     "volume": "120",

@@ -1,17 +1,17 @@
 [
   {
     "year": 2026,
-    "authors": "Lei Zhao; Yilan Tang; Wenhui Zhao; Shijiani Li; Jie Chen; Tian Ge; Yiheng Tu",
+    "authors": "Zhao, L.#, Tang, Y.#, Zhao, W.#, Li, S., Chen, J., Ge, T., & Tu, Y.",
     "title": "Regional heterogeneity in phenotypic and genetic associations between bone and brain in humans",
     "journal": "Nature Communications",
     "doi": "10.1038/s41467-026-73428-y",
     "link": "https://www.nature.com/articles/s41467-026-73428-y",
     "type": "Journal Article",
-    "note": "Lei Zhao, Yilan Tang, and Wenhui Zhao contributed equally"
+    "authorNote": "# co-first author"
   },
   {
     "year": 2025,
-    "authors": "Wenhui Zhao; Xuejing Lu; Yiheng Tu",
+    "authors": "Zhao, W., Lu, X., & Tu, Y.",
     "title": "Child maltreatment elevated the risk of late-life chronic pain: a biopsychosocial framework from the UK Biobank cohort",
     "journal": "Pain",
     "volume": "166",
@@ -23,7 +23,7 @@
   },
   {
     "year": 2024,
-    "authors": "Lei Zhao; Jiao Liu; Wenhui Zhao; Jie Chen; Jicong Fan; Tian Ge; Yiheng Tu",
+    "authors": "Zhao, L.#, Liu, J.#, Zhao, W., Chen, J., Fan, J., Ge, T., & Tu, Y.",
     "title": "Morphological and genetic decoding shows heterogeneous patterns of brain aging in chronic musculoskeletal pain",
     "journal": "Nature Mental Health",
     "volume": "2",
@@ -31,11 +31,12 @@
     "pages": "435–449",
     "doi": "10.1038/s44220-024-00223-3",
     "link": "https://www.nature.com/articles/s44220-024-00223-3",
-    "type": "Journal Article"
+    "type": "Journal Article",
+    "authorNote": "# co-first author"
   },
   {
     "year": 2023,
-    "authors": "Lei Zhao; Wenhui Zhao; International Headache Genetics Consortium (IHGC); Jin Cao; Yiheng Tu",
+    "authors": "Zhao, L., Zhao, W., International Headache Genetics Consortium (IHGC), Cao, J., & Tu, Y.",
     "title": "Causal relationships between migraine and microstructural white matter: a Mendelian randomization study",
     "journal": "The Journal of Headache and Pain",
     "volume": "24",
@@ -47,7 +48,7 @@
   },
   {
     "year": 2023,
-    "authors": "Wenhui Zhao; Lei Zhao; Xiangyu Chang; Xuejing Lu; Yiheng Tu",
+    "authors": "Zhao, W., Zhao, L., Chang, X., Lu, X., & Tu, Y.",
     "title": "Elevated dementia risk, cognitive decline, and hippocampal atrophy in multisite chronic pain",
     "journal": "Proceedings of the National Academy of Sciences",
     "volume": "120",

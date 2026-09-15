@@ -1,25 +1,25 @@
-Wenhui Zhao website update package
+REVISED WEBSITE PACKAGE — V2
 
-Replace these repository files with the versions in this package:
-- index.html
-- publications.html
-- cv.html
-- assets/styles.css
-- assets/script.js
-- data/publications.json
+Replace the corresponding files in the root of your GitHub Pages repository.
 
-Upload this image to the assets folder:
-- assets/photo-2026.jpg
+Required structure:
 
-The revised site intentionally:
-- uses the new rectangular portrait;
-- adds the 2026–2027 Young Investigator Support Fund;
-- formats publications in APA style;
-- bolds and italicizes journal names;
-- bolds Zhao, W.;
-- marks co-first authors with a superscript #;
-- updates the 2026 Nature Communications citation to volume 17, article 6789;
-- removes the public phone number and street address;
-- simplifies the homepage and removes duplicate CSS rules.
+index.html
+publications.html
+cv.html
+assets/
+  styles.css
+  script.js
+  photo-2026.jpg
+data/
+  publications.json
 
-After uploading, commit the changes and wait for GitHub Pages to redeploy.
+V2 homepage changes:
+- Research Areas now lists: Quantitative Psychology, Neuroscience, Locus Coeruleus, Genetics, and Neuroimaging.
+- The full publication list appears before Honors & Awards.
+- The homepage no longer uses a three-item selected-publication limit.
+- Email, Google Scholar, ORCID, and ResearchGate use the same button style.
+- Removed the labels “Recognition” and “Selected work.”
+- Removed the sentence “For research-related correspondence, please use my USC email address.”
+
+After uploading or pushing the files, wait for GitHub Pages to deploy and then hard-refresh the site.

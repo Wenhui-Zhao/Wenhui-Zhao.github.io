@@ -1,25 +1,12 @@
-REVISED WEBSITE PACKAGE — V2
+Wenhui Zhao academic website — revision 3
 
-Replace the corresponding files in the root of your GitHub Pages repository.
+Changes in this revision:
+- Restores the four detailed Research Focus cards.
+- Changes the header tagline to: Quantitative Psychology · Neuroscience · Locus Coeruleus · Genetics · Neuroimaging.
+- Keeps the complete Publications section before Honors & Awards on the homepage.
+- Moves Honors & Awards to immediately after Publications in the CV.
+- Lists the Young Investigator Support Fund as a $42,436 award for 2026–2027.
+- Restores the USC office address on the homepage and CV.
+- Keeps all profile/email buttons visually consistent.
 
-Required structure:
-
-index.html
-publications.html
-cv.html
-assets/
-  styles.css
-  script.js
-  photo-2026.jpg
-data/
-  publications.json
-
-V2 homepage changes:
-- Research Areas now lists: Quantitative Psychology, Neuroscience, Locus Coeruleus, Genetics, and Neuroimaging.
-- The full publication list appears before Honors & Awards.
-- The homepage no longer uses a three-item selected-publication limit.
-- Email, Google Scholar, ORCID, and ResearchGate use the same button style.
-- Removed the labels “Recognition” and “Selected work.”
-- Removed the sentence “For research-related correspondence, please use my USC email address.”
-
-After uploading or pushing the files, wait for GitHub Pages to deploy and then hard-refresh the site.
+Replace the corresponding files in the root, assets/, and data/ directories of the GitHub Pages repository.

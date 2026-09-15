@@ -1,5 +1,5 @@
 // assets/script.js
-// Loads publication metadata from data/publications.json and renders APA-style references.
+// Loads all publication metadata from data/publications.json and renders APA-style references.
 
 function escapeHTML(value = "") {
   return String(value).replace(/[&<>"']/g, (character) => ({
@@ -110,15 +110,10 @@ function sortPublications(publications) {
 }
 
 function renderPublicationList(target, publications) {
-  const requestedLimit = Number.parseInt(target.dataset.limit || "", 10);
-  const visiblePublications = Number.isFinite(requestedLimit)
-    ? publications.slice(0, requestedLimit)
-    : publications;
-
   const list = document.createElement("ol");
   list.className = "publist";
 
-  visiblePublications.forEach((publication) => {
+  publications.forEach((publication) => {
     const item = document.createElement("li");
     item.innerHTML = formatAPACitation(publication);
     list.appendChild(item);

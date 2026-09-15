@@ -249,10 +249,6 @@ h3 {
   padding-block: clamp(3rem, 7vw, 5rem);
 }
 
-.compact-home-section {
-  padding-top: 0;
-}
-
 .compact-section {
   padding-top: 1rem;
 }
@@ -266,22 +262,22 @@ h3 {
   margin-bottom: 1.6rem;
 }
 
-.area-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.focus-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
 }
 
-.area-list li {
-  padding: 0.72rem 1rem;
+.focus-card {
+  padding: 1.35rem;
   border: 1px solid var(--border);
-  border-radius: 999px;
-  background: var(--surface);
-  font-weight: 700;
-  line-height: 1.2;
+  border-radius: var(--radius);
+  background: white;
+}
+
+.focus-card p {
+  margin-bottom: 0;
+  color: var(--muted);
 }
 
 .award-card,
@@ -331,7 +327,21 @@ h3 {
 }
 
 .contact-panel h2 {
+  margin-bottom: 0.55rem;
+}
+
+.contact-address,
+.cv-address {
+  color: var(--muted);
+  font-style: normal;
+}
+
+.contact-address {
   margin: 0;
+}
+
+.cv-address {
+  margin: -0.65rem 0 0.9rem;
 }
 
 .page-main {
@@ -526,6 +536,10 @@ h3 {
     width: min(74vw, 280px);
   }
 
+  .focus-grid {
+    grid-template-columns: 1fr;
+  }
+
   .award-card,
   .cv-item {
     grid-template-columns: 1fr;
@@ -576,15 +590,6 @@ h3 {
 
   .button {
     width: 100%;
-  }
-
-  .area-list {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .area-list li {
-    border-radius: 12px;
   }
 
   .publist li {

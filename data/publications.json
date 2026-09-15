@@ -1,18 +1,22 @@
 [
   {
     "year": 2026,
+    "sortOrder": 1,
     "authors": "Zhao, L.#, Tang, Y.#, Zhao, W.#, Li, S., Chen, J., Ge, T., & Tu, Y.",
     "title": "Regional heterogeneity in phenotypic and genetic associations between bone and brain in humans",
     "journal": "Nature Communications",
+    "volume": "17",
+    "articleNumber": "6789",
     "doi": "10.1038/s41467-026-73428-y",
     "link": "https://www.nature.com/articles/s41467-026-73428-y",
     "type": "Journal Article",
-    "authorNote": "# co-first author"
+    "authorNote": "# Co-first authors."
   },
   {
     "year": 2025,
+    "sortOrder": 1,
     "authors": "Zhao, W., Lu, X., & Tu, Y.",
-    "title": "Child maltreatment elevated the risk of late-life chronic pain: a biopsychosocial framework from the UK Biobank cohort",
+    "title": "Child maltreatment elevated the risk of late-life chronic pain: A biopsychosocial framework from the UK Biobank cohort",
     "journal": "Pain",
     "volume": "166",
     "issue": "4",
@@ -23,6 +27,7 @@
   },
   {
     "year": 2024,
+    "sortOrder": 1,
     "authors": "Zhao, L.#, Liu, J.#, Zhao, W., Chen, J., Fan, J., Ge, T., & Tu, Y.",
     "title": "Morphological and genetic decoding shows heterogeneous patterns of brain aging in chronic musculoskeletal pain",
     "journal": "Nature Mental Health",
@@ -32,28 +37,29 @@
     "doi": "10.1038/s44220-024-00223-3",
     "link": "https://www.nature.com/articles/s44220-024-00223-3",
     "type": "Journal Article",
-    "authorNote": "# co-first author"
+    "authorNote": "# Co-first authors."
   },
   {
     "year": 2023,
-    "authors": "Zhao, L., Zhao, W., International Headache Genetics Consortium (IHGC), Cao, J., & Tu, Y.",
-    "title": "Causal relationships between migraine and microstructural white matter: a Mendelian randomization study",
+    "sortOrder": 1,
+    "authors": "Zhao, L., Zhao, W., International Headache Genetics Consortium, Cao, J., & Tu, Y.",
+    "title": "Causal relationships between migraine and microstructural white matter: A Mendelian randomization study",
     "journal": "The Journal of Headache and Pain",
     "volume": "24",
-    "issue": "1",
-    "pages": "10",
+    "articleNumber": "10",
     "doi": "10.1186/s10194-023-01550-z",
     "link": "https://thejournalofheadacheandpain.biomedcentral.com/articles/10.1186/s10194-023-01550-z",
     "type": "Journal Article"
   },
   {
     "year": 2023,
+    "sortOrder": 2,
     "authors": "Zhao, W., Zhao, L., Chang, X., Lu, X., & Tu, Y.",
     "title": "Elevated dementia risk, cognitive decline, and hippocampal atrophy in multisite chronic pain",
     "journal": "Proceedings of the National Academy of Sciences",
     "volume": "120",
     "issue": "9",
-    "pages": "e2215192120",
+    "articleNumber": "e2215192120",
     "doi": "10.1073/pnas.2215192120",
     "link": "https://www.pnas.org/doi/10.1073/pnas.2215192120",
     "type": "Journal Article"
